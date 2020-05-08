@@ -1,0 +1,72 @@
+.header {
+  background-image: url(/martaup_site_react/public/images/Bg.svg);
+  min-height: 67rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.menu-bar {
+  display: flex;
+  list-style-type: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 350;
+}
+
+.menu-itemns {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+.menu-bar li {
+  opacity: 60%;
+}
+.menu-bar li:hover {
+  transition: 0.3s;
+  opacity: 100%;
+}
+
+.menu-bar li + li {
+  padding-left: 50px;
+}
+
+#contact {
+  margin: 0;
+}
+.log-in-bar {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 350px;
+}
+
+.login {
+  margin-right: 44px;
+}
+
+#button {
+  font-size: 24px;
+  width: 143px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: solid;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  color: #250f8a;
+}
