@@ -132,6 +132,7 @@ export default class App extends Component {
                 onToggleLiked={this.onToggleLiked}/>
                 <PostAddForm
                 onAdd={this.addItem}/>
+                
             </div>
          )
     }
