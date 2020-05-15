@@ -35,7 +35,7 @@ html {
 }
 .bg {
   /* The image used */
-  background-image: url("/bootstrapSite/images/RPM_Dec_2019_001-copy.jpg");
+  background-image: url("../images/RPM_Dec_2019_001-copy.jpg");
   /* Full height */
   height: 80%;
   margin-top: 55px;
