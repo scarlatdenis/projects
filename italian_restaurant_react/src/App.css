@@ -1,0 +1,308 @@
+header {
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  position: relative;
+}
+.navbar-nav {
+  margin: auto;
+}
+#navbarSupportedContent-333 {
+  margin-left: -85px;
+}
+
+.nav-item {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+}
+
+.button-tracked {
+  background-color: rgb(36, 36, 36);
+  color: solid #3d3d3d;
+  outline: 1px solid #3b3738;
+}
+
+#logo {
+  height: 40px;
+  width: auto;
+  padding: 0.25rem;
+}
+
+body,
+html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://s3.amazonaws.com/bucket2.rpmrestaurants.com/wp-content/uploads/RPM_Dec_2019_001-copy.jpg");
+  /* Full height */
+  height: 600px;
+  margin-top: 55px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-us {
+  z-index: 1;
+  background-color: white;
+  outline-offset: 0.25rem;
+  outline: 3px solid white;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+  width: 33vw;
+  max-width: 450px;
+  position: absolute;
+  top: 6vw;
+  left: 5vw;
+  color: #747474;
+}
+
+.logo-about {
+  margin-top: -15px;
+  width: 50%;
+  max-width: 150px;
+  margin: auto;
+}
+.about-us-text {
+  box-sizing: border-box;
+  padding: 2rem 0 2rem;
+}
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #231f20;
+  color: #747474;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+}
+
+/* section menu page */
+
+.menu-page {
+  display: block;
+  text-align: center;
+}
+.our-menus {
+  padding: 3rem 3rem;
+  max-width: 800px;
+  line-height: 150%;
+  margin: auto;
+  text-align: center;
+  margin: auto;
+  padding: 48px 32px;
+}
+
+h2 {
+  margin: 1rem 0;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  font-family: "Bodoni LT W05 Book", serif;
+  color: black;
+}
+
+.link-wrap {
+  box-sizing: border-box;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 300;
+}
+
+.description-our-menu {
+  box-sizing: border-box;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0 5rem;
+  color: #747474;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button {
+  -webkit-box-flex: initial;
+  -ms-flex-positive: initial;
+  flex-grow: initial;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid #231f20;
+  background-color: transparent;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 300;
+  margin: 12px 8px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  color: #747474;
+}
+/*  */
+
+.grey-callout-wrap {
+  padding: 1rem 2rem;
+  background-color: #f2f0f1;
+  display: block;
+  box-sizing: border-box;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 300;
+  position: relative;
+  width: 100%;
+}
+.callout {
+  display: flex;
+  position: relative;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4rem 0;
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+
+.private-parties {
+  margin: 0;
+  z-index: 1;
+  width: 30%;
+  margin: 0;
+  z-index: 1;
+  width: 30%;
+  padding: 3rem;
+  background-color: white;
+  outline: 3px solid white;
+  outline-color: white;
+  outline-offset: 0.25rem;
+  max-width: 800px;
+  line-height: 150%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+p {
+  color: #747474;
+  font-size: 20px;
+}
+
+.img-gallery {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 75%;
+  object-fit: cover;
+  object-position: center;
+  margin: 40px;
+}
+
+/* keep in touch */
+.keep-in-touch-wrap {
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+.keep-in-touch {
+  position: relative;
+}
+.keep-in-touch-tittle {
+  text-align: center;
+  margin: 2rem 0;
+}
+.keep-in-touch-text {
+  box-sizing: border-box;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 300;
+  font-size: large;
+}
+
+.link-wrap {
+  max-width: 80%;
+  margin: 3rem auto 4rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+.link-wrap a {
+  margin: 0 10px;
+}
+
+body,
+html {
+  height: 100%;
+}
+.bg2 {
+  height: 50vh;
+  vertical-align: bottom;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #231f20;
+}
+.wide {
+  padding: 2rem 4rem;
+  margin: auto;
+  background-color: #231f20;
+  border-bottom: 1px solid white;
+}
+
+.footerlink {
+  color: white;
+  text-transform: uppercase;
+  margin: 0 3rem;
+  font-size: large;
+}
+
+footer .wrap {
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+}
+
+footer p {
+  color: rgb(179, 179, 179);
+}
+
+.adress-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .wrap a {
+  text-decoration: none;
+  color: white;
+}
+footer .wrap p {
+  padding-top: 1rem;
+}
+
+/*dubfooter  */
+
+.subfooter {
+  text-align: center;
+}
+.subfooter a {
+  text-decoration: none;
+  color: black;
+}
