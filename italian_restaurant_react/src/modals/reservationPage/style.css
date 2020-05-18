@@ -1,0 +1,10 @@
+.findatablebtn{    
+    background-color: #231f20;
+    border-radius: none;
+    color: white;
+}
+
+.findatablebtn :hover{
+    display: none;
+    color: yellow;
+}

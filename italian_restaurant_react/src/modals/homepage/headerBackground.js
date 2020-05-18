@@ -17,7 +17,7 @@ function HeaderBackground () {
               Italian is modern in approach and Italian in spirit and features a
               contemporary, chef­-driven menu with dishes meant to be shared.
             </p>
-            <a href="" className="button">adout us</a>
+            <button className="aboutUs">About us</button>
           </div>
         </div>
       </div>

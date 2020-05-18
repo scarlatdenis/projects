@@ -1,32 +1,48 @@
 header {
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  background: white;
+  background-color: white;
+  text-align: left;
+  position: relative;
+}
+.navHeader{
+  position: absolute;
+  right: 0;
+}
+.headerLogo {
+  max-height: 50px;
+  padding: 10px;
+}
+.btnReserve {
+  background-color: rgb(31, 31, 31);
+  color: rgb(182, 181, 181);
+  margin-right: 2rem;
+}
+
+.headerNav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  display: inline-flex;
+
+}
+.headerNav button {
+  letter-spacing: 2px;
+  opacity: 1;
+  box-sizing: border-box;
+  border: 0;
+}
+
+header {
   background-color: whitesmoke;
   text-transform: uppercase;
   font-size: 0.8rem;
   position: relative;
-}
-.navbar-nav {
-  margin: auto;
-}
-#navbarSupportedContent-333 {
-  margin-left: -85px;
-}
-
-.nav-item {
-  font-family: "Gotham A", "Gotham B", sans-serif;
-  letter-spacing: 2px;
-  box-sizing: border-box;
-}
-
-.button-tracked {
-  background-color: rgb(36, 36, 36);
-  color: solid #3d3d3d;
-  outline: 1px solid #3b3738;
-}
-
-#logo {
-  height: 40px;
-  width: auto;
-  padding: 0.25rem;
 }
 
 body,
@@ -38,11 +54,11 @@ html {
   background-image: url("https://s3.amazonaws.com/bucket2.rpmrestaurants.com/wp-content/uploads/RPM_Dec_2019_001-copy.jpg");
   /* Full height */
   height: 600px;
-  margin-top: 55px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 55px;
   position: relative;
 }
 
@@ -164,11 +180,7 @@ button {
 .callout {
   display: flex;
   position: relative;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 4rem 0;
   margin: 3rem auto;

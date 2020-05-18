@@ -1,16 +1,13 @@
 import React from 'react';
 import './App.css';
-import Footer from './modals/homepage/footer';
-import MenusPage from './modals/menusPage/menusPage';
+import HomePage from './modals/homepage/homepage';
 
 
 function App() {
   return (
     <div>
 
-      <MenusPage />
-     
-      <Footer />
+    <HomePage />
 
     </div>
   );

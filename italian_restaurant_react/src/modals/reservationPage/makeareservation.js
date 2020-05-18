@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { Form, } from 'react-bootstrap';
+import React from 'react';
+import {Form} from 'react-bootstrap';
+import '../reservationPage/style.css'
 
 
 
@@ -14,7 +15,7 @@ function MakeAReservation() {
                 <span >Make a reservation</span>
             </h3>
 
-           
+
 
             <Form>
                 <Form.Group controlId="exampleForm.SelectCustom">
@@ -65,6 +66,7 @@ function MakeAReservation() {
                         <option>20 people</option>
                         <option>Larger party</option>
                     </Form.Control>
+                    <button className="findatablebtn">Find a table</button>
                 </Form.Group>
             </Form>
         </div>

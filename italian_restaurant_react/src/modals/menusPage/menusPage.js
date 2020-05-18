@@ -9,7 +9,7 @@ function MenusPage() {
 
             <section className="menu-page">
                 <div className="our-menus">
-                    <h2>Menus</h2>
+                    <h2>Menu</h2>
                     <p className="description-our-menu">
                         At RPM Italian, the core of our menu revolves around the
                         fresh artisan pastas made by hand every day, plus a wide selection of
