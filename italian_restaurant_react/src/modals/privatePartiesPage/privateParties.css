@@ -8,6 +8,9 @@
   background-size: cover;
   object-fit: cover;
 }
+.bg2specialofferings img{
+  margin-top: 15px;
+}
 .about-private-parties {
   background-color: white;
   outline-offset: 0.25rem;
@@ -50,4 +53,21 @@
 
 .divDefault{
     text-align: center;
+}
+
+
+.formPrivateParties{
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.formPrivateParties p{
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.sectoninput{
+  padding: 5px;
+  vertical-align: top;  
+  display: grid;
 }

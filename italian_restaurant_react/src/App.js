@@ -22,7 +22,7 @@ function App() {
 
       <Navbar />
 
-      <Route path='/home' component={HomePage} />
+      <Route p path='/home' component={HomePage} />
       <Route path='/menu' component={MenuPage} />
       <Route path='/spectialofferings' component={SpecialOfferingsPage} />
       <Route path='/privateparties' component={PrivatePartiesPage} />
