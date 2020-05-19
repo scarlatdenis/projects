@@ -18,7 +18,7 @@ function KeepInTouch () {
           </div>
         </div>
       </section>
-      <img src="https://s3.amazonaws.com/bucket2.rpmrestaurants.com/wp-content/uploads/RPMItalian_GroupDinner-wide-1.jpg" className="bg2" alt="" />
+      <img src="https://s3.amazonaws.com/bucket2.rpmrestaurants.com/wp-content/uploads/RPMItalian_GroupDinner-wide-1.jpg" className="bgsmall" alt="" />
 
         </div>
     )

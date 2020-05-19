@@ -1,26 +1,19 @@
 import React from 'react';
 import {Form} from 'react-bootstrap';
-import '../reservationPage/style.css'
-
-
-
+import './makereservation.css'
 
 function MakeAReservation() {
 
 
     return (
         <div>
-
             <h3 className="makeareservation">
                 <span >Make a reservation</span>
             </h3>
-
-
-
+            
             <Form>
-                <Form.Group controlId="exampleForm.SelectCustom">
-                    <Form.Label></Form.Label>
-                    <Form.Control as="select" custom>
+                <Form.Group control Id="reservationForm">
+                    <Form.Control as="select" custom id="select">
 
                         <option>Select a date</option>
 

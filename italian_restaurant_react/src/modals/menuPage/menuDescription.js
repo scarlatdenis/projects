@@ -1,11 +1,10 @@
 import React from 'react';
-import './menus.css'
-import Menu from './menu';
+import './menu.css'
 
-function MenusPage() {
+const MenuDescription = () =>  {
     return (
-        <div>
-            <img src="https://s3.amazonaws.com/bucket2.rpmrestaurants.com/wp-content/uploads/RPMItalian_Dinner_7.jpg" className="menusbg1" alt="" />
+        <div className="menubg">
+            <img src="https://s3.amazonaws.com/bucket2.rpmrestaurants.com/wp-content/uploads/RPMItalian_Dinner_7.jpg" className="bgsmall" alt="" />
 
             <section className="menu-page">
                 <div className="our-menus">
@@ -25,12 +24,11 @@ function MenusPage() {
                         <button>dessert menu</button>
                         <button>gluten free menu</button>
                     </div>
-                </div>
-
-                <Menu />
+                </div>                
             </section>
+
         </div>
     )
 }
 
-export default MenusPage;
+export default MenuDescription;

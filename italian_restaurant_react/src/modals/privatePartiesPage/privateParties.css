@@ -1,0 +1,53 @@
+.bgspecialofferings {
+  position: relative;
+}
+.specialofferings-img {
+  height: 88vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.about-private-parties {
+  background-color: white;
+  outline-offset: 0.25rem;
+  outline: 3px solid white;
+  text-align: center;
+  padding: 40px;
+  top: 6.2vh;
+  max-width: 400px;
+  position: absolute;
+  left: 5vw;
+  color: #747474;
+  box-sizing: border-box;
+  position: absolute;
+}
+.specialofferingstitle {
+  margin: 0;
+}
+.copy p {
+  margin: 0;
+}
+.callout-reverse{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem 0;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+.img-gallery-reverse {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90%;
+    width: 75%;
+    object-fit: cover;
+    object-position: center;
+    margin: 40px;
+}
+
+.divDefault{
+    text-align: center;
+}

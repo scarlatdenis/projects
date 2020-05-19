@@ -1,29 +1,27 @@
 import React from 'react';
 
-function HeaderBackground () {
-    return (
-            <body>
-      <div className="bg">
-        <p className="py-5 text-center"></p>
+function HeaderBackground() {
+  return (
+    <div>
+      <div className="homebg">
+        <img src="https://s3.amazonaws.com/bucket2.rpmrestaurants.com/wp-content/uploads/RPM_Dec_2019_001-copy.jpg" alt=""></img>
         <div className="about-us">
-          <div className="copy">
-            <img
-              className="logo-about"
-              src="https://www.scarlat.md/wp-content/uploads/2018/03/logo-500px-wide2.png"
-              alt=""
-            />
+            <div className="aboutUsLogo">
+              <img src="" alt="LOGO"></img>
+            </div>
             <p className="about-us-text">
               Located in Washington, D.C.’s Mount Vernon neighborhood, RPM
               Italian is modern in approach and Italian in spirit and features a
               contemporary, chef­-driven menu with dishes meant to be shared.
             </p>
-            <button className="aboutUs">About us</button>
+            <button className="about-us-btn">About us</button>
           </div>
         </div>
-      </div>
-    </body>
 
-    )
+
+
+      </div>
+  )
 }
 
 export default HeaderBackground;

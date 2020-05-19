@@ -1,5 +1,5 @@
 import React from 'react';
-import MakeAReservation from '../reservationPage/makeareservation';
+import MakeAReservation from '../reservationModal/makeareservation';
 
 
 

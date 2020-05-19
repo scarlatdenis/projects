@@ -1,21 +1,20 @@
 import React from 'react';
 import HeaderBackground from './headerBackground';
 import KeepInTouch from './keepInTouch';
-import Footer from './footer';
-import MenuPage from './menuPage';
+import MenuPage from './menuHomePage';
 import CalloutWrap from './calloutWrap';
-import Header from './header';
+import './home.css';
 
 
 function HomePage() {
     return (
         <div>
-            <Header /> 
+            
             <HeaderBackground />
             <MenuPage />
             <CalloutWrap />
             <KeepInTouch />
-            <Footer />
+            
         </div>
     )
 }

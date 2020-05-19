@@ -13,7 +13,7 @@ function CalloutWrap() {
                             throughout the entire restaurant space. The private dining spaces
                             are chic and modern, set in tones of blacks, whites and grays.
           </p>
-                        <a className="button" href="">learn more</a>
+                        <button href="">learn more</button>
                     </div>
                 </div>
                 <img
