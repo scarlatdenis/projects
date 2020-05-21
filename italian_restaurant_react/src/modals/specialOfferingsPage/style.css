@@ -1,0 +1,31 @@
+.specialofferingsimg {
+  width: 100%;
+  height: 88vh;
+}
+
+.specialofferingstitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 120%;
+  color: rgb(37, 37, 37);
+}
+
+.joinbutton{
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.about-us2 {
+  top: 12vh;
+  max-height: 580px;
+  background-color: white;
+  outline-offset: 0.25rem;
+  outline: 3px solid white;
+  text-align: center;
+  padding: 40px;
+  width: 33vw;
+  max-width: 400px;
+  position: absolute;
+  left: 5vw;
+  color: #747474;
+}

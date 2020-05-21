@@ -1,0 +1,52 @@
+/* .menudescription img {
+  height: 55vh;
+  vertical-align: bottom;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menuSection {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.itemWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.sectionName {
+  padding: 16px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  display: block;
+  font-family: "Bodoni LT W05 Book", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 120%;
+}
+.itemName {
+    box-sizing: border-box;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 400;
+}
+
+.itemDescription {
+  flex: 100%;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-size: 18px;
+}
+
+.makeareservation {
+    margin-top: 45px;
+}
+
+#deliverycaryout{
+  text-align: center;
+}
+ */

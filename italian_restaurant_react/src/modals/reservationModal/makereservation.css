@@ -1,0 +1,10 @@
+/* .findatablebtn{
+    background-color: #231f20;
+    border-color: solid #231f20;
+    color: white;
+    font-weight: 300;
+} */
+
+#reservationForm{
+    display: grid;
+}
