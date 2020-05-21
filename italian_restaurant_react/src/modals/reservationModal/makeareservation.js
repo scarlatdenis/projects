@@ -10,14 +10,11 @@ function MakeAReservation() {
             <h3 className="makeareservation">
                 <span >Make a reservation</span>
             </h3>
-            
             <Form>
                 <Form.Group control Id="reservationForm">
-                    <Form.Control as="select" custom id="select">
 
-                        <option>Select a date</option>
+                           
 
-                    </Form.Control>
                     <Form.Control as="select" custom>
 
                         <option>04.30 PM</option>
