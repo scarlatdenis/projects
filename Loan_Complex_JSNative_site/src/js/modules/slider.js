@@ -1,31 +1,44 @@
 export default class Slider {
+
     constructor(page, btns) {
         this.page = document.querySelector(page);
         this.slides = this.page.children;
         this.btns = document.querySelectorAll(btns);
-        this.sladeindex = 1;
+        this.slideIndex = 1;
     }
+    
     showSlides(n) {
+
         if (n > this.slides.length) {
-            this.slideindex = 1;
+            this.slideIndex = 1;
         }
         if (n < 1) {
-            this.slideindex = this.slides.length;
+            this.slideIndex = this.slides.length;
         }
-
         this.slides.forEach(slide => {
-            slide.style.display - 'none';
+            slide.style.display = 'none';
         });
-
-        this.slides[this.slideindex - 1].style.display = 'block';
+        this.slides[this.slideIndex - 1].style.display = 'block';
     }
 
     plusSlides(n) {
-        this.showSlides(this.slideindex += n);
+        this.showSlides(this.slideIndex += n);
     }
-
 
     render() {
-        console.log(this.page, this.slides)
+        this.btns.forEach(item => {
+            item.addEventListener('click', () => {
+                this.plusSlides(1)
+            });
+
+            item.parentNode.previousElementSibling.addEventListener('click', (e) => {
+                e.preventDefault();                  
+                this.slideIndex = 1;
+                this.showSlides(this.slideIndex);
+            })  
+        });
+        this.showSlides(this.slideIndex);
     }
 }
+
+// 
