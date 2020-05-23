@@ -40,7 +40,6 @@ export default class Slider {
         });
         this.slides[this.slideIndex - 1].style.display = 'block';
     }
-
     plusSlides(n) {
         this.showSlides(this.slideIndex += n);
     }
