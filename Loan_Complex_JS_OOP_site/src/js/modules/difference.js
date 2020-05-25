@@ -17,6 +17,7 @@ export default class Difference {
     bindTriggers(container, items, counter) {
 
         container.querySelector('.plus').addEventListener('click', () => {
+            
             if (counter !== items.length - 2) {
                 items[counter].style.display = 'flex';
                 counter++;
@@ -40,6 +41,7 @@ export default class Difference {
 
         this.hideItems(this.oldItems);
         this.hideItems(this.newItems);
+
         this.bindTriggers(this.oldOfficer, this.oldItems, this.oldCounter);
         this.bindTriggers(this.newOfficer, this.newItems, this.newCounter);
     }
