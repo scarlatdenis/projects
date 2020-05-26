@@ -4,6 +4,7 @@ import MiniSlider from './modules/slider/slider-mini';
 import Difference from './modules/difference';
 
 window.addEventListener('DOMContentLoaded', () => {
+    
     const slider = new MainSlider({ btns: '.next', container: '.page' });
     slider.render();
 
@@ -34,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const feedSlider = new MiniSlider({
 
         container: '.feed__slider',
-        prev: '.feed__slider .slick-prev',
+        prev: '.feed__slider .slick-prev',  
         next: '.feed__slider .slick-next',
         activeClass: 'feed__item-active'
     });
