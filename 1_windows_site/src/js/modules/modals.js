@@ -46,6 +46,7 @@ const Modals = () => {
 
     showModalByTime('.popup', 60000);
 
+
 };
 
 

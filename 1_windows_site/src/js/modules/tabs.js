@@ -15,7 +15,6 @@ const Tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
         tab.forEach(item => {
             item.classList.remove(activeClass);
         });
-        
     }
 
     function showTabContent(i = 0) {
