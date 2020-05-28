@@ -1,5 +1,5 @@
 
-const Tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
+const Tabs = (headerSelector, tabSelector, contentSelector, activeClass, display = "block") => {
 
     const header = document.querySelector(headerSelector),
         tab = document.querySelectorAll(tabSelector),
@@ -19,7 +19,7 @@ const Tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
     }
 
     function showTabContent(i = 0) {
-        content[i].style.display = 'block';
+        content[i].style.display = display;
         tab[i].classList.add(activeClass);
     }
 
@@ -35,6 +35,7 @@ const Tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
 
             tab.forEach((item, i) => {
                 if (target == item || target.parentNode == item) {
+                    
                     hideTabContent();
                     showTabContent(i);
                 }
