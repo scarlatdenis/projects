@@ -1,18 +1,12 @@
 import { setTimeout } from "core-js";
+import CheckNumInputs from './checkNumInputs';
 
-const Forms = () => {
+const Forms = (state) => {
 
     const form = document.querySelectorAll('form'),
-        inputs = document.querySelectorAll('input'),
-        phoneInputs = document.querySelectorAll('input[name= "user_phone');
+        inputs = document.querySelectorAll('input');
 
-
-    phoneInputs.forEach(item => {
-
-        item.addEventListener('input', () => {
-            item.value = item.value.replace(/\D/, '');  // elementul introdus este verificat daca e cifra, daca nu se inlocuieste cu nimic;
-        });
-    });
+    CheckNumInputs('input[name= "user_phone"]')
 
     const message = {
 
@@ -48,6 +42,12 @@ const Forms = () => {
             item.appendChild(statusMessage);
 
             const formData = new FormData(item);
+
+            if (item.getAttribute('data-calc') === 'end') {           
+                for (let key in state) {
+                    formData.append(key, state[key]);
+                }
+            }
 
             postData('assets/server.php', formData).then(res => {
                 console.log(res);
