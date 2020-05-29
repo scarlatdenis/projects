@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let modalState = {};
 
-    let deadLine = '2020-06-15';
+    let deadLine = '2020-06-15';  // timer deadline
 
     ChangeModalState(modalState);
 
@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     Tabs('.balcon_icons', '.balcon_icons_img', '.big_img > img', 'do_image_more', 'inline-block');  //calculator tab  //.big_img > img -- direct children
 
     Timer('.container1', deadLine);
+    
     Forms(modalState);
 
 });

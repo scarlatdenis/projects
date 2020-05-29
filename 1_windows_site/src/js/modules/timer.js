@@ -35,6 +35,8 @@ const Timer = (id, deadline) => {
             minutes = document.querySelector('#minutes'),
             seconds = document.querySelector('#seconds'),
             timeInterval = setInterval(updateClock, 1000);
+        //
+        updateClock(); // chemam functia ca sa nu vedem timpul introdus in html
 
         function updateClock() {
             const t = getTimeRemaining(endtime);
@@ -46,10 +48,10 @@ const Timer = (id, deadline) => {
 
             if (t.total <= 0) {
                 days.textContent = "00";
-                hours.textContent = "00";
+                hours.textContent = "00";       // adaugam zero in fata in caz ca avem cifra
                 minutes.textContent = "00";
                 seconds.textContent = "00";
-
+                //
                 clearInterval(timeInterval);
             }
         }
