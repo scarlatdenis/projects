@@ -5,6 +5,7 @@ import Tabs from './modules/tabs';
 import Forms from './modules/forms';
 import ChangeModalState from './modules/changeModalState';
 import Timer from './modules/timer';
+import Images from './modules/images';
 
 window.addEventListener('DOMContentLoaded', () => {
     "use strict"
@@ -23,5 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     Timer('.container1', deadLine);
     
     Forms(modalState);
+
+    Images();
 
 });
