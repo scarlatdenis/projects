@@ -6,7 +6,7 @@ const browsersync = require("browser-sync");
 
 const dist = "./dist/";
 
-// const dist = ''
+// const dist = "/var/www/steklopaket/dist/"
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")

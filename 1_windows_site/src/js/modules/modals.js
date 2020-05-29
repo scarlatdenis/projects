@@ -8,6 +8,7 @@ const Modals = () => {
             close = document.querySelector(closeSelector),
             windows = document.querySelectorAll('[data-modal]');  // popup windows
 
+
         trigger.forEach(item => {
             item.addEventListener('click', (e) => {
 
