@@ -1,6 +1,8 @@
 
 const Modals = () => {
 
+    let btnPressed = false;
+
     function bindModal(triggerSelector, modalSelector, closeSelector, destroy = false) {
 
         const trigger = document.querySelectorAll(triggerSelector),
@@ -12,10 +14,11 @@ const Modals = () => {
 
         trigger.forEach(item => {
             item.addEventListener('click', (e) => {
-
                 if (destroy) {
                     item.remove();
                 }
+
+                btnPressed = true;
 
                 if (e.target) {
                     e.preventDefault();
@@ -87,10 +90,21 @@ const Modals = () => {
 
         // let scrollWidth = div.offsetWidth - div.clientWidth;
         let scrollWidth = 15;
-
         div.remove();
         return scrollWidth;
     }
+
+    // onscroll popup, lucreaza daca nu ai accesat niciun buton
+    window.onscroll = function () {
+        var d = document.documentElement;
+        var offset = d.scrollTop + window.innerHeight;
+        var height = d.offsetHeight;
+        // console.log('offset = ' + offset);
+        // console.log('height = ' + height);      
+        if (!btnPressed && (offset >= height)) {
+            document.querySelector('.fixed-gift').click();
+        }
+    };
 
     bindModal('.button-design', '.popup-design', '.popup-design .popup-close');
     bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
@@ -98,7 +112,8 @@ const Modals = () => {
 
     // showModalByTime('.popup-consultation', 60000);
 
-};
 
+
+};
 
 export default Modals;

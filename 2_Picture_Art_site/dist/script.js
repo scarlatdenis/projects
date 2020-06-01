@@ -954,6 +954,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Modals = function Modals() {
+  var btnPressed = false;
+
   function bindModal(triggerSelector, modalSelector, closeSelector) {
     var destroy = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
     var trigger = document.querySelectorAll(triggerSelector),
@@ -967,6 +969,8 @@ var Modals = function Modals() {
         if (destroy) {
           item.remove();
         }
+
+        btnPressed = true;
 
         if (e.target) {
           e.preventDefault();
@@ -1030,7 +1034,27 @@ var Modals = function Modals() {
     var scrollWidth = 15;
     div.remove();
     return scrollWidth;
-  }
+  } // function openByScroll() {
+  // verificam daca userul a facut scroll pana la capat       
+  // window.addEventListener('scroll', () => {
+  //     if (!btnPressed && (window.pageXOffset + document.documentElement.clientHeight >=
+  //         document.documentElement.scrollHeight)) {
+  //              document.querySelector(selector).click();        //            
+  //     }            
+  // });
+  // }
+
+
+  window.onscroll = function () {
+    var d = document.documentElement;
+    var offset = d.scrollTop + window.innerHeight;
+    var height = d.offsetHeight; // console.log('offset = ' + offset);
+    // console.log('height = ' + height);      
+
+    if (!btnPressed && offset >= height) {
+      document.querySelector('.fixed-gift').click();
+    }
+  };
 
   bindModal('.button-design', '.popup-design', '.popup-design .popup-close');
   bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
