@@ -3,9 +3,9 @@ export default class Form {
         this.forms = document.querySelectorAll(forms);
         this.inputs = document.querySelectorAll('input');
         this.message = {
-            loading: 'loading...',
-            success: 'We recievied yor data!',
-            failure: 'Error'
+            loading: 'Загрузка...',
+            success: 'Спасибо! Скоро мы с вами свяжемся!',
+            failure: 'Что-то пошло не так...'
         };
         this.path = 'assets/question.php';
     }
@@ -16,11 +16,11 @@ export default class Form {
         });
     }
 
-    checkMailInputs() {
+    checkMailInputs(){
         const mailInputs = document.querySelectorAll('[type="email"]');
-
+    
         mailInputs.forEach(input => {
-            input.addEventListener('keypress', function (e) {
+            input.addEventListener('keypress', function(e) {
                 if (e.key.match(/[^a-z 0-9 @ \.]/ig)) {
                     e.preventDefault();
                 }
@@ -32,7 +32,7 @@ export default class Form {
 
         let setCursorPosition = (pos, elem) => {
             elem.focus();
-
+            
             if (elem.setSelectionRange) {
                 elem.setSelectionRange(pos, pos);
             } else if (elem.createTextRange) {
@@ -55,7 +55,7 @@ export default class Form {
                 val = def;
             }
 
-            this.value = matrix.replace(/./g, function (a) {
+            this.value = matrix.replace(/./g, function(a) {
                 return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
             });
 
@@ -82,7 +82,7 @@ export default class Form {
             method: "POST",
             body: data
         });
-
+    
         return await res.text();
     }
 
