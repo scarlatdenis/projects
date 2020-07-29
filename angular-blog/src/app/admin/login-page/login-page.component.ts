@@ -36,8 +36,6 @@ export class LoginPageComponent implements OnInit {
       email: this.form.value.email,
       password: this.form.value.password
     }
-
-
   }
 }
 
