@@ -1,18 +1,19 @@
-.post{
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.post {
 
-    }
-    h1{
-        margin-bottom: .5rem;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  h1 {
+    margin-bottom: .5rem;
+  }
+
+  .info {
+    strong {
+      margin-right: 1rem;
     }
-    .info{
-        strong{
-            margin-right: 1rem;
-        }
-    }
+  }
 
 }
