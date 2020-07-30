@@ -1,8 +1,9 @@
 <form class="card" [formGroup]="form" (ngSubmit)="submit()">
-  <h2>Войти в панель администратора</h2>
+  <h2>Login to administrator panel</h2>
 
 
   <div class="alert alert-danger" *ngIf="auth.error$ | async as error ">{{error}}</div>
+  <div class="alert alert-info" *ngIf="message">{{message}}</div>
 
   <div
     class="form-control"
@@ -15,10 +16,10 @@
       class="validation"
     >
       <small *ngIf="form.get('email').errors.required">
-        Введите поле email
+        Insert Email
       </small>
       <small *ngIf="form.get('email').errors.email">
-        Поле email должно быть email
+        Email need to be an email
       </small>
     </div>
   </div>
@@ -27,21 +28,21 @@
     class="form-control"
     [ngClass]="{invalid: form.get('password').touched && form.get('password').invalid}"
   >
-    <label for="password">Пароль:</label>
+    <label for="password">Password:</label>
     <input id="password" type="password" formControlName="password">
     <div
       class="validation"
       *ngIf="form.get('password').touched && form.get('password').invalid"
     >
       <small *ngIf="form.get('password').errors.required">
-        Введите пароль
+        Insert password
       </small>
       <small *ngIf="form.get('password').errors.minlength">
-        Пароль должен быть не менее
+        The password need to be
         {{form.get('password').errors.minlength.requiredLength}}
-        символов. Сейчас он
+        symbol. Now is
         {{form.get('password').errors.minlength.actualLength}}
-        символа.
+        simbol.
       </small>
     </div>
   </div>
@@ -50,5 +51,5 @@
     type="submit"
     class="btn btn-primary"
     [disabled]="form.invalid || submitted"
-  >Войти</button>
+  >Submit</button>
 </form>
