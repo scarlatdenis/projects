@@ -1,44 +1,39 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
-  <h1>Create new post</h1>
+  <h1>Создание нового поста</h1>
 
   <div
     class="form-control"
-    [ngClass]="{
-      invalid: form.get('email').touched && form.get('email').invalid
-    }"
+    [ngClass]="{invalid: form.get('title').touched && form.get('title').invalid}"
   >
-    <label for="title">Post name</label>
-    <input id="title" type="text" formControlName="title" />
+    <label for="title">Название поста:</label>
+    <input id="title" type="text" formControlName="title">
     <div
-      *ngIf="form.get('title').touched && form.get('email').invalid"
+      *ngIf="form.get('title').touched && form.get('title').invalid"
       class="validation"
     >
       <small *ngIf="form.get('title').errors.required">
-        Insert post name
+        Введите название поста
       </small>
     </div>
   </div>
 
   <div class="form-control">
-    <label>
-      Post content
-    </label>
+    <label>Контент поста:</label>
+    <quill-editor formControlName="text"></quill-editor>
   </div>
 
   <div
     class="form-control"
-    [ngClass]="{
-      invalid: form.get('author').touched && form.get('author').invalid
-    }"
+    [ngClass]="{invalid: form.get('author').touched && form.get('author').invalid}"
   >
-    <label for="author">Author post name</label>
-    <input id="author" type="text" formControlName="author" />
+    <label for="author">Автор поста:</label>
+    <input id="author" type="text" formControlName="author">
     <div
       *ngIf="form.get('author').touched && form.get('author').invalid"
       class="validation"
     >
       <small *ngIf="form.get('author').errors.required">
-        Insert author post
+        Введите автора поста
       </small>
     </div>
   </div>
@@ -47,7 +42,5 @@
     type="submit"
     class="btn btn-block btn-dark"
     [disabled]="form.invalid"
-  >
-    Crate post
-  </button>
+  >Создать пост</button>
 </form>
