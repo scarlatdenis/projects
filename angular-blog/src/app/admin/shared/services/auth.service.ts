@@ -5,7 +5,7 @@ import { Observable, throwError, Subject } from 'rxjs';
 import { environment } from '../../../../environments/environment';
 import { tap, catchError } from 'rxjs/operators';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class AuthService {
   public error$: Subject<string> = new Subject<string>();
 
@@ -43,13 +43,13 @@ export class AuthService {
 
     switch (message) {
       case 'EMAIL_NOT_FOUND':
-        this.error$.next('This Email not found')
+        this.error$.next('This Email not found');
         break;
       case 'INVALID_EMAIL':
-          this.error$.next('Wrong Email')
+        this.error$.next('Wrong Email');
         break;
       case 'INVALID_PASSWORD':
-        this.error$.next('Wrong Password')
+        this.error$.next('Wrong Password');
 
         break;
     }
